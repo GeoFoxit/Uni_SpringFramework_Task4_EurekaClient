@@ -1,0 +1,26 @@
+### Api-gateway config
+GET http://localhost:9999/config
+Content-type: text/plain
+Project: My updated super mega  laba 3 for KPI | App: Just simple API-gateway service
+
+### Service (instance 1) config
+GET http://localhost:8081/config
+Content-type: text/plain
+Project: My updated super mega  laba 3 for KPI | App: Just simple mananger API service
+
+### Service (instance 2) config
+GET http://localhost:8082/config
+Project: My updated super mega  laba 3 for KPI | App: Just simple mananger API service
+
+### Configs in config server
+GET http://localhost:8888/application/default
+Content-type: application/json
+
+GET http://localhost:8888/feign/default
+Content-type: application/json
+
+GET http://localhost:8888/eurekaclientmicroservice/default
+Content-type: application/json
+
+### Config refresh
+POST http://localhost:8081/actuator/refresh

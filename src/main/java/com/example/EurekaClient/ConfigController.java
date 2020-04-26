@@ -17,7 +17,7 @@ public class ConfigController {
     @Value("${app.description: None}")
     private String appDesc;
 
-    @RequestMapping("/desc")
+    @RequestMapping("/config")
     @ResponseBody
     public String getPropsFormDownloadedConfig() {
         return "Project: " + projDesc + " | " + "App: " + appDesc;
