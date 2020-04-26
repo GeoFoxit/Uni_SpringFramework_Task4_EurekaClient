@@ -1,3 +1,4 @@
+Спочатку потрібно клонувати https://github.com/GeoFoxit/JavaMicroServices_smtrpzConfig, щоб локально встановити конфіг репозиторій.
 Для запуску додатка потрібно послідовно відкрити всі 4 проекти в Intellij Idea та запустити їх.
 
 Eureka Server URL: http://localhost:8761
