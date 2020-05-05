@@ -45,6 +45,7 @@ public class Mananger {
     public void setAddress(String address) { this.address = address; }
     public void setClientsCount(Integer clientsCount) { this.clientsCount = clientsCount; }
 
+    public Integer getId() { return this.id; }
     public String getName() {
         return this.name;
     }

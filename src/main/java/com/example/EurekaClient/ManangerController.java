@@ -58,12 +58,19 @@ public class ManangerController {
     @GetMapping("/{mananger_id}")
     public ResponseEntity<?> getManangerById(@PathVariable Integer mananger_id) {
         Mananger mananger = manangerService.findById(mananger_id);
-        return new ResponseEntity<Mananger>(mananger, HttpStatus.OK);
+        if (mananger == null) {
+            return new ResponseEntity<String>("Entity is not found. Check the ID", HttpStatus.BAD_REQUEST);
+        }
+        return new ResponseEntity<Mananger>(mananger,HttpStatus.OK);
     }
 
     @DeleteMapping("/{mananger_id}")
     public ResponseEntity<?> deleteMananger(@PathVariable Integer mananger_id) {
-        manangerService.delete(mananger_id);
-        return new ResponseEntity<String>("Mananger deleted", HttpStatus.OK);
+        try {
+            manangerService.delete(mananger_id);
+            return new ResponseEntity<String>("Mananger deleted", HttpStatus.OK);
+        } catch (Exception e) {
+            return new ResponseEntity<String>("Entity is not found. Check the ID", HttpStatus.BAD_REQUEST);
+        }
     }
 }
