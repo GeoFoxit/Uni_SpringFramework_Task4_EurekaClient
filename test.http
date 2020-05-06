@@ -24,3 +24,37 @@ Content-type: application/json
 
 ### Config refresh
 POST http://localhost:8081/actuator/refresh
+
+### FOR API-GATEWAY
+
+### Create entity
+POST http://localhost:9999/
+Content-type: application/json
+
+{
+  "name": "Markus Markus",
+  "phone" = "43768743",
+  "age" = "34",
+  "address" = "Zhylanska str. 4",
+  "clientsCount" = "5"
+}
+
+### Update entity
+PUT http://localhost:9999/1
+Content-type: application/json
+
+{
+  "phone" = "45555743",
+  "age" = "24"
+}
+
+### Fetch entities
+GET http://localhost:9999
+Content-type: application/json
+
+### Fetch entity
+GET http://localhost:9999/1
+Content-type: application/json
+
+### Delete entity
+DELETE http://localhost:9999/1
