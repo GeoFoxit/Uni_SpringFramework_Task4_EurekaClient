@@ -1,4 +1,4 @@
-package com.example.EurekaClient;
+package com.example.EurekaClient.controllers;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;

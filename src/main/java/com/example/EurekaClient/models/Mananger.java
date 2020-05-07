@@ -1,5 +1,4 @@
-package com.example.EurekaClient;
-
+package com.example.EurekaClient.models;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
