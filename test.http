@@ -32,11 +32,11 @@ POST http://localhost:9999/
 Content-type: application/json
 
 {
-  "name": "Markus Markus",
-  "phone" = "43768743",
-  "age" = "34",
-  "address" = "Zhylanska str. 4",
-  "clientsCount" = "5"
+	"name": "Riko Enriko",
+	"age": "22",
+	"phone": "+333333437",
+	"address": "Faltsova st. 11",
+	"clientsCount": "63"
 }
 
 ### Update entity
@@ -44,10 +44,12 @@ PUT http://localhost:9999/1
 Content-type: application/json
 
 {
-  "phone" = "45555743",
-  "age" = "24"
+	"name": "Riko Enriko",
+	"age": "22",
+	"phone": "+4934587",
+	"address": "Faltsova st. 11",
+	"clientsCount": "403"
 }
-
 ### Fetch entities
 GET http://localhost:9999
 Content-type: application/json
