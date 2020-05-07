@@ -42,7 +42,7 @@ public class ManangerController {
         return new ResponseEntity<String>(gson.toJson(manangerService.save(findedMananger)), HttpStatus.OK);
     }
 
-    @GetMapping("/")
+    @GetMapping("")
     public ResponseEntity<String> getAllManangers() {
         return new ResponseEntity<String>(gson.toJson(manangerService.findAll()), HttpStatus.OK);
     }
